@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>心理学入門（後期） 講義ポータル</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        .highlight {
+            background: linear-gradient(transparent 60%, #fef08a 60%);
+            font-weight: 700;
+            color: #1e3a8a;
+        }
+        .text-justified {
+            text-align: justify;
+            text-justify: inter-character;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased line-height-relaxed">
+
+    <!-- ポータルヘッダー -->
+    <header class="bg-gradient-to-r from-teal-900 to-slate-900 text-white shadow-md sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div>
+                <p class="text-xs font-bold text-teal-300 uppercase tracking-wider">四国大学 講義ポータル</p>
+                <h1 class="text-base sm:text-lg font-bold text-white mt-0.5">心理学入門（後期）</h1>
+            </div>
+            <span class="text-xs bg-teal-800 text-teal-200 px-3 py-1 rounded-full border border-teal-700">2026年度 後期開講</span>
+        </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 py-12">
+        
+        <!-- コースバナー -->
+        <div class="bg-white border border-slate-200 rounded-3xl p-6 sm:p-10 shadow-sm mb-12 relative overflow-hidden">
+            <div class="absolute -right-10 -bottom-10 w-48 h-48 bg-teal-50 rounded-full pointer-events-none"></div>
+            <p class="text-teal-600 font-bold tracking-widest text-xs uppercase mb-2">COURSE OVERVIEW</p>
+            <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-4">
+                毎日の生活を前向きなものにする方法
+            </h1>
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed text-justified mb-6">
+                後期に開講される心理学入門は、「毎日の生活を前向きなものにする方法」を総合テーマに据え、脳科学や認知心理学、発達心理学の知見を実践的に学びます。私たちが無意識に抱える「脳の妙なクセ」を科学的に理解し、自分自身の思考や行動をより健やかにコントロールするスキルを身につけます。
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-slate-100 text-xs sm:text-sm">
+                <div>
+                    <span class="text-slate-400 block mb-0.5">教科書</span>
+                    <strong class="text-slate-800">池谷裕二 著『脳には妙なクセがある』（新潮文庫）</strong>
+                </div>
+                <div>
+                    <span class="text-slate-400 block mb-0.5">成績評価配分</span>
+                    <strong class="text-slate-800">毎回の課題（50%） ＋ 定期試験（50%）</strong>
+                </div>
+                <div>
+                    <span class="text-slate-400 block mb-0.5">受講連絡</span>
+                    <strong class="text-teal-700">Manaba掲示板を必ず確認</strong>
+                </div>
+            </div>
+        </div>
+
+        <!-- 講義スケジュール＆学習テキスト一覧 -->
+        <section class="mb-12">
+            <div class="flex items-center justify-between mb-6">
+                <h2 class="text-lg sm:text-xl font-bold text-slate-900 flex items-center">
+                    <span class="w-2.5 h-6 bg-teal-600 rounded-sm mr-3"></span>
+                    講義一覧・学習テキスト
+                </h2>
+                <span class="text-xs text-slate-500 font-medium">全15回 順次公開</span>
+            </div>
+
+            <div class="space-y-3">
+                
+                <!-- 第1回（開講・リンク有効） -->
+                <a href="lec_01/index.html" class="block bg-white border border-teal-200 hover:border-teal-500 p-5 rounded-2xl shadow-sm hover:shadow-md transition-all group">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                        <div class="flex items-start sm:items-center space-x-3">
+                            <span class="bg-teal-700 text-white text-xs font-bold px-2.5 py-1 rounded-md">第1回</span>
+                            <div>
+                                <h3 class="font-bold text-slate-900 group-hover:text-teal-700 transition-colors text-sm sm:text-base">
+                                    汝己（おのれ）を知れ ―ひとは自分のことをよくわからない―
+                                </h3>
+                                <p class="text-xs text-slate-500 mt-0.5">錯視、注意の限界、優越の錯覚、情動の原因帰属、期待と解釈の力</p>
+                            </div>
+                        </div>
+                        <span class="text-xs text-teal-600 font-bold flex items-center shrink-0 self-end sm:self-center">
+                            受講・学習テキストへ &rarr;
+                        </span>
+                    </div>
+                </a>
+
+                <!-- 第2回（準備中） -->
+                <div class="bg-slate-100/70 border border-slate-200 p-4 rounded-2xl flex items-center justify-between opacity-75">
+                    <div class="flex items-center space-x-3">
+                        <span class="bg-slate-300 text-slate-600 text-xs font-bold px-2.5 py-1 rounded-md">第2回</span>
+                        <span class="text-sm font-medium text-slate-600">講義準備中（開講日以降に公開）</span>
+                    </div>
+                    <span class="text-xs text-slate-400">未公開</span>
+                </div>
+
+                <!-- 第3回（準備中） -->
+                <div class="bg-slate-100/70 border border-slate-200 p-4 rounded-2xl flex items-center justify-between opacity-75">
+                    <div class="flex items-center space-x-3">
+                        <span class="bg-slate-300 text-slate-600 text-xs font-bold px-2.5 py-1 rounded-md">第3回</span>
+                        <span class="text-sm font-medium text-slate-600">講義準備中（開講日以降に公開）</span>
+                    </div>
+                    <span class="text-xs text-slate-400">未公開</span>
+                </div>
+
+                <!-- 第4回（準備中） -->
+                <div class="bg-slate-100/70 border border-slate-200 p-4 rounded-2xl flex items-center justify-between opacity-75">
+                    <div class="flex items-center space-x-3">
+                        <span class="bg-slate-300 text-slate-600 text-xs font-bold px-2.5 py-1 rounded-md">第4回</span>
+                        <span class="text-sm font-medium text-slate-600">講義準備中（開講日以降に公開）</span>
+                    </div>
+                    <span class="text-xs text-slate-400">未公開</span>
+                </div>
+
+                <!-- 第5回（準備中） -->
+                <div class="bg-slate-100/70 border border-slate-200 p-4 rounded-2xl flex items-center justify-between opacity-75">
+                    <div class="flex items-center space-x-3">
+                        <span class="bg-slate-300 text-slate-600 text-xs font-bold px-2.5 py-1 rounded-md">第5回</span>
+                        <span class="text-sm font-medium text-slate-600">講義準備中（開講日以降に公開）</span>
+                    </div>
+                    <span class="text-xs text-slate-400">未公開</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 履修にあたっての注意事項 -->
+        <section class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+            <h3 class="font-bold text-slate-900 text-sm sm:text-base mb-3 flex items-center">
+                📢 履修にあたっての重要連絡
+            </h3>
+            <ul class="text-xs sm:text-sm text-slate-600 space-y-2 list-disc list-inside text-justified">
+                <li>教室の座席は自由です。</li>
+                <li>履修登録者数と教室の収容規模が合わない場合は、学期途中で教室変更を行うことがあります。大学の学習支援システム（Manaba）の掲示板を定期的に確認してください。</li>
+                <li>病気や公認欠席等で授業に出席できなかった場合は、各回のフォローアップ・学習テキストを自主学習し、ページ下部の提出フォームより課題を送信してください。</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- フッター -->
+    <footer class="bg-slate-900 text-slate-400 text-center py-8 text-xs border-t border-slate-800 mt-20">
+        <p>&copy; 2026 四国大学 心理学入門（後期） 講義ポータル All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

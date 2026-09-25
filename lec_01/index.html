@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>心理学入門（後期）：第1回 汝己（おのれ）を知れ ―ひとは自分のことをよくわからない―（フォローアップ・学習テキスト）</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <!-- 数式レンダリング用 MathJax 設定 -->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process'
+            },
+            chtml: {
+                matchFontHeight: false
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+    <style>
+        .highlight {
+            background: linear-gradient(transparent 60%, #fef08a 60%);
+            font-weight: 700;
+            color: #1e3a8a;
+        }
+        .text-justified {
+            text-align: justify;
+            text-justify: inter-character;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased line-height-relaxed">
+
+    <!-- 講義ヘッダー -->
+    <header class="bg-gradient-to-r from-teal-900 to-slate-900 text-white shadow-md sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div>
+                <p id="subject_label" class="text-xs font-bold text-teal-300 uppercase tracking-wider">心理学入門（後期）</p>
+                <h1 id="lecture_title" class="text-sm sm:text-base font-bold text-white mt-0.5">第1回：汝己（おのれ）を知れ ―ひとは自分のことをよくわからない―</h1>
+            </div>
+            <a href="../index.html" class="text-xs bg-white/10 hover:bg-white/20 px-3 py-1.5 rounded-lg transition-colors whitespace-nowrap">講義ポータルへ戻る</a>
+        </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main class="max-w-3xl mx-auto px-4 sm:px-6 py-12">
+        
+        <!-- タイトルエリア -->
+        <div class="text-center mb-16">
+            <p class="text-teal-600 font-bold tracking-widest text-xs sm:text-sm uppercase mb-3">第1回 フォローアップ・学習テキスト</p>
+            <h1 class="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6">
+                汝己（おのれ）を知れ<br class="hidden sm:inline">
+                <span class="text-xl sm:text-2xl text-slate-600 font-normal block mt-2">―ひとは自分のことをよくわからない―</span>
+            </h1>
+            <div class="w-16 h-1 bg-teal-600 mx-auto rounded"></div>
+        </div>
+
+        <!-- 講義ガイダンス & 導入リード文 -->
+        <div class="mb-12 rounded-2xl overflow-hidden shadow-lg border border-slate-200 bg-white">
+            <div class="p-6 sm:p-8 bg-gradient-to-br from-teal-50 to-slate-50 text-justified space-y-4">
+                <div class="bg-white p-4 rounded-xl border border-teal-150 shadow-sm text-xs sm:text-sm space-y-1.5">
+                    <p class="font-bold text-teal-950 border-b border-slate-100 pb-1">📌 後期「心理学入門」ガイダンス情報</p>
+                    <p class="text-slate-700"><strong>全体テーマ：</strong> 毎日の生活を前向きなものにする方法</p>
+                    <p class="text-slate-700"><strong>教科書：</strong> 池谷裕二 著『脳には妙なクセがある』（新潮文庫）</p>
+                    <p class="text-slate-700"><strong>成績評価：</strong> 毎回の授業内課題（50%） ＋ 学期末定期試験（50%）</p>
+                    <p class="text-slate-600 text-xs mt-1">※教室の座席は自由ですが、履修者数により教室変更が生じる場合があります。大学の学習支援システム（Manaba）の掲示板を必ず確認してください。</p>
+                </div>
+                <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
+                    古代ギリシャのデルポイの神殿には「汝己を知れ」という有名な格言が刻まれています。私たちは普段、自分の考えや行動の理由を誰よりも正確に理解していると信じ込んでいます。しかし心理学や脳科学が明らかにしてきたのは、人間は「なぜそのように判断したのか」を正確に説明できないという事実です。第1回の講義では、知覚の錯覚から自己評価の偏り、身体反応の解釈、期待が現実を動かすプロセスまで、人間が抱える「脳の妙なクセ」を順を追って解き明かしていきました。
+                </p>
+            </div>
+        </div>
+
+        <!-- 1. 目で見る世界は脳が解釈した「加工品」である -->
+        <section class="mb-16">
+            <h2 class="text-xl sm:text-2xl font-bold text-slate-900 border-l-4 border-teal-600 pl-4 mb-6">
+                1. 目で見る世界は脳が解釈した「加工品」である
+            </h2>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                私たちは目を開けたとき、目の前の世界をビデオカメラのようにありのまま受け取っていると思いがちですが、実際には脳が感覚情報をそのまま受け取るのではなく、過去の経験や文脈を利用して能動的に解釈しています。その証拠となるのが、物理的な実態とは異なる見え方をしてしまう<strong class="highlight">「錯視」</strong>という現象です。
+            </p>
+
+            <div class="space-y-4 my-6 text-sm sm:text-base">
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm text-justified">
+                    <p class="font-bold text-teal-950 mb-1">■ シルエットの回転錯視</p>
+                    <p class="text-slate-700">
+                        シルエットの女性が回転する映像では、全く同じ映像を見ているにもかかわらず、時計回りに見えたり反時計回りに見えたりと、人やタイミングによって回転方向が突然切り替わります。影絵のような平面的で曖昧な情報に対し、脳が無意識に奥行きの手がかりを補おうとするために生じますが、見ている本人には「なぜその瞬間に回転が逆転したのか」を説明することはできません。
+                    </p>
+                </div>
+
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm text-justified">
+                    <p class="font-bold text-teal-950 mb-1">■ シェパードの机と幾何学的錯視</p>
+                    <p class="text-slate-700 mb-2">
+                        「シェパードの机」では、縦に細長い天板とほぼ正方形に見える天板が描かれていますが、二次元の紙面上で計測すると寸法や形状は完全に一致しています。私たちの視覚系は、二次元の線画であっても自動的に三次元の奥行き空間として解釈してしまうため、奥行き方向に伸びている机を実際よりも細長く見積もってしまいます。
+                    </p>
+                    <p class="text-xs text-slate-600">
+                        矢羽の向きで主直線の長さが違って見える「ミューラー・リヤー錯視」や、円柱の影による「チェッカーシャドウ錯視」も同様です。脳は物理的な光信号をそのまま受容しているのではなく、環境に適応するために独自の補正や推論を加えながら世界を再構成しています。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. 注意の限界と他者の心の理解 -->
+        <section class="mb-16">
+            <h2 class="text-xl sm:text-2xl font-bold text-slate-900 border-l-4 border-teal-600 pl-4 mb-6">
+                2. 注意の限界と他者の心の理解
+            </h2>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                脳が感覚情報を独自に解釈しているだけでなく、私たちの「注意」の処理容量にも極めて厳格な限界が存在します。
+            </p>
+
+            <div class="bg-white border border-slate-200 p-5 rounded-xl text-sm sm:text-base space-y-3 mb-6 shadow-sm">
+                <p class="font-bold text-teal-950">🦍 見えないゴリラ実験と「非注意性盲目」</p>
+                <p class="text-slate-700 text-justified">
+                    バスケットボールのパス回数を正確に数えようと画面に強い注意を向けていると、画面の中央を堂々と横切るゴリラの着ぐるみに多くの参加者が全く気づきません。この実験が示しているのは、<strong class="highlight">「見えていること」と「気づいていること」は同じではない</strong>という認知の基本原理です。
+                </p>
+            </div>
+
+            <div class="bg-slate-50 border border-slate-200 p-5 rounded-xl text-sm sm:text-base space-y-3">
+                <p class="font-bold text-slate-900">🧒 サリーとアン課題と「心の理論」</p>
+                <p class="text-slate-700 text-justified">
+                    このように自分自身の知覚や注意に限界がある一方で、人間は他者の心の内面を推し量る高度な認知能力を発達させてきました。カゴにボールを入れたサリーが部屋を出た隙に、アンがボールを箱へ移してしまう「サリーとアン課題」では、大人はサリーが「最初にボールを入れたカゴを探す」と推測できますが、幼い子どもは他者の視点と自分の知識を分離できず、「箱を探す」と答えてしまいます。他者が自分とは異なる信念を持っていると理解する能力は「心の理論」と呼ばれ、社会生活を営む上で欠かせない発達的基盤です。
+                </p>
+            </div>
+        </section>
+
+        <!-- 3. 自分自身を過大評価する脳：優越の錯覚の可能性 -->
+        <section class="mb-16">
+            <h2 class="text-xl sm:text-2xl font-bold text-slate-900 border-l-4 border-teal-600 pl-4 mb-6">
+                3. 自分自身を過大評価する脳：優越の錯覚の可能性
+            </h2>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                認知の偏りは、外の世界を見るときだけでなく、自分自身を評価するときにも色濃く現れます。
+            </p>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                講義の中で「あなたは周囲の人と比べてどれくらい正直ですか」と質問したところ、回答の分布は客観的な平均値よりも高い数字に偏りました。数学的に全員が平均以上になることはあり得ないにもかかわらず、「自分は平均的な人よりも優れている」と信じ込む心理的偏向を<strong class="highlight">「優越の錯覚」</strong>と呼びます。
+            </p>
+
+            <div class="bg-white border-2 border-teal-100 p-6 rounded-2xl shadow-sm text-sm sm:text-base space-y-3 text-justified my-6">
+                <p class="font-bold text-teal-950 border-b border-slate-100 pb-2">🧠 山田ら（2013）による脳機能画像研究</p>
+                <p class="text-slate-800">
+                    意欲や報酬に関わる「線条体」と、感情の制御に関わる「前部帯状回」の間の機能的結合が強い人ほど、自信を保ちやすいことが示されています。逆に、この結合が弱く自分を客観的・過小に見積もりがちな人ほど、抑うつ傾向が高くなるという負の相関が認められています。
+                </p>
+                <p class="text-slate-700 bg-teal-50/60 p-3 rounded-lg border border-teal-100 text-xs sm:text-sm">
+                    優越の錯覚は、過酷な現実や失敗に心が折れてしまわないための**「心のショックアブソーバー（緩衝材）」**として働き、困難に向き合って前を向くための心理的支えとなっている可能性があります。
+                </p>
+            </div>
+        </section>
+
+        <!-- 4. 身体の反応にも意味づけをする：情動の原因帰属 -->
+        <section class="mb-16">
+            <h2 class="text-xl sm:text-2xl font-bold text-slate-900 border-l-4 border-teal-600 pl-4 mb-6">
+                4. 身体の反応にも意味づけをする：情動の原因帰属
+            </h2>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                私たちは自分の心だけでなく、「自分の身体で起きていること」でさえ、そのまま正しく理解しているわけではありません。身体に生理的変化が生じたとき、脳はその変化に対して周囲の状況から後付けで理由を探し出そうとします。
+            </p>
+
+            <div class="bg-white border border-slate-200 p-5 rounded-xl text-sm sm:text-base space-y-3 shadow-sm my-4 text-justified">
+                <p class="font-bold text-teal-950">💉 アドレナリン注射実験（シャクターらの情動二要因論的実験）</p>
+                <p class="text-slate-700">
+                    被験者にアドレナリンを注射して心拍数を上昇させた際、事前に「副作用で動悸が起こる」と正しい説明を受けていた群は動悸を「注射のせいだ」と冷静に納得しました。しかし、説明を受けていなかった群は、同じ部屋にいる役者の態度に巻き込まれ、相手が怒っていれば自分も怒りを感じ、陽気にはしゃいでいれば異常な楽しさを感じました。
+                </p>
+                <p class="text-xs text-teal-900 font-bold border-t border-slate-100 pt-2">
+                    生理的興奮そのものは同じ心拍数の上昇であるにもかかわらず、原因を知らない脳は、周囲の文脈を手がかりにして「怒り」や「楽しさ」というラベルを都合よく貼り替えてしまうのです。
+                </p>
+            </div>
+        </section>
+
+        <!-- 5. 信じたことが現実を創り出す：期待と解釈の力 -->
+        <section class="mb-16">
+            <h2 class="text-xl sm:text-2xl font-bold text-slate-900 border-l-4 border-teal-600 pl-4 mb-6">
+                5. 信じたことが現実を創り出す：期待と解釈の力
+            </h2>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                脳が持つ思い込みや期待は、自分自身の状態を解釈するだけでなく、他者への認識や現実そのものにも強い影響を及ぼします。
+            </p>
+
+            <div class="space-y-4 my-6 text-sm sm:text-base">
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm text-justified">
+                    <p class="font-bold text-teal-950 mb-1">■ 顔の傷メイク実験（期待による解釈の偏り）</p>
+                    <p class="text-slate-700">
+                        顔にリアルな傷メイクを施した被験者に、直前に内緒で傷を拭き取った状態で面談を行わせると、被験者は「相手が私の傷を気にして不自然に視線をそらした」と報告しました。「相手は自分を避けるはずだ」という事前の信念があると、相手の通常の瞬きやニュートラルな仕草さえも、その信念に沿って歪んで知覚されてしまうのです。
+                    </p>
+                </div>
+
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm text-justified">
+                    <p class="font-bold text-teal-950 mb-1">■ 予言の自己成就現象とピグマリオン効果</p>
+                    <p class="text-slate-700 mb-2">
+                        期待が行動を媒介して結果そのものを本当に変えてしまう現象を「予言の自己成就現象」と呼び、教育現場におけるピグマリオン効果などが知られています。
+                    </p>
+                    <p class="text-xs text-slate-500">
+                        ※ピグマリオン効果の大きさや再現性については学術的な議論が続いており、確定的な事実として単純に捉えるのではなく慎重に見極める科学的態度が必要です。それでも、「どうせ自分なんて」という否定的な予言を持ち続けていると、無意識のうちに行動が抑制され、望まない結果を引き寄せてしまうリスクには留意する必要があります。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. まとめ：自分の「クセ」を知り、環境を工夫して生きる -->
+        <section class="mb-16">
+            <h2 class="text-xl sm:text-2xl font-bold text-slate-900 border-l-4 border-teal-600 pl-4 mb-6">
+                6. まとめ：自分の「クセ」を知り、環境を工夫して生きる
+            </h2>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                心理学を学ぶことは、「自分の心を完全に見抜くこと」ではありません。自分にも見えない心のクセがあることを知り、そのクセがどのような場面で働くのかを理解していくことです。
+            </p>
+            <div class="bg-slate-900 text-slate-100 p-6 rounded-2xl shadow-md text-sm sm:text-base leading-relaxed text-justified space-y-3">
+                <p class="text-amber-300 font-bold border-b border-slate-700 pb-2">💡 「汝己を知れ」の真意</p>
+                <p class="text-slate-300">
+                    自分を完璧にコントロールしようとするのではなく、自身の認知や解釈の傾向を知り、それを無理に否定することなく受け入れる点にあります。自分の特徴を理解していれば、苦手な場面に直面しても「今は脳のこういうクセが出ているな」と一歩引いて捉え、意志の強さに頼るのではなく、事前に環境を整えたり具体的な対処法を用意したりして柔軟に対応できます。
+                </p>
+            </div>
+        </section>
+
+        <hr class="border-slate-200 my-12">
+
+        <!-- 理解度確認テスト ＆ 出席・提出フォーム -->
+        <section class="bg-white border border-slate-200 rounded-2xl shadow-md p-6 sm:p-8">
+            <h2 class="text-xl font-bold text-slate-900 mb-6 flex items-center">
+                <span class="bg-teal-600 text-white text-xs px-2.5 py-1 rounded-md mr-3">課題提出</span>
+                💡 理解度確認テスト ＆ 出席・提出フォーム
+            </h2>
+
+            <form id="lecture_form" onsubmit="submitForm(event)" class="space-y-6">
+                
+                <!-- 問1 -->
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-150">
+                    <p class="font-bold text-slate-800 text-sm sm:text-base mb-3">
+                        【問1】山田ら（2013）の脳機能画像研究や「優越の錯覚」に関する記述として、講義内容に照らして最も適切なものを一つ選びなさい。
+                    </p>
+                    <div class="space-y-3 text-sm sm:text-base">
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q1" value="A" required class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">A) 優越の錯覚は重篤な脳機能の障害であり、この錯覚を抱く人ほど脳内の機能的結合が失われてうつ傾向が高まる。</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q1" value="B" class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">B) 線条体と前部帯状回の機能的結合が強い人ほど自信を保ちやすいことが示されており、自分を少しポジティブに見積もる錯覚は心理的適応を支える保護的機能を持つ可能性がある。</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q1" value="C" class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">C) 人間は自己評価を極めて客観的に行う能力を持っているため、正直さの自己評価を実施すると全回答が正確に平均値の中央に整列する。</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q1" value="D" class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">D) ミューラー・リヤー錯視などの視覚的錯覚を訓練によって克服した人だけが、自己評価における優越の錯覚を完全に消し去ることができる。</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- 問2 -->
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-150">
+                    <p class="font-bold text-slate-800 text-sm sm:text-base mb-3">
+                        【問2】本講義で解説された「期待や信念の働き」に関する説明として、最も適切なものを一つ選びなさい。
+                    </p>
+                    <div class="space-y-3 text-sm sm:text-base">
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q2" value="A" required class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">A) 顔の傷メイク実験は、自分が持っている期待や信念が、他者の曖昧な行動の解釈に偏りをもたらす例を示している。</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q2" value="B" class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">B) アドレナリン注射の実験は、身体の生理的興奮がどのように生じても、脳は常にその原因を客観的かつ正確に自覚できることを証明した。</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q2" value="C" class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">C) ピグマリオン効果は、教師の期待が子どもの成績を無条件に100パーセント向上させる確定的な法則であり、その効果の大きさについて学術的な議論の余地は存在しない。</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q2" value="D" class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">D) サリーとアン課題を通過した成人は、他者が心の中で考えている主観的信念を完全に透視できるようになる。</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- 学籍番号 & 氏名入力 -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label for="student_id" class="block text-sm font-bold text-slate-700 mb-2">学籍番号</label>
+                        <input type="text" id="student_id" required placeholder="例: 13（半角数字）" 
+                               class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none text-slate-800">
+                    </div>
+                    <div>
+                        <label for="student_name" class="block text-sm font-bold text-slate-700 mb-2">氏 名</label>
+                        <input type="text" id="student_name" required placeholder="例: 四国 太郎" 
+                               class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none text-slate-800">
+                    </div>
+                </div>
+
+                <!-- 質問・感想 -->
+                <div>
+                    <label for="student_feedback" class="block text-sm font-bold text-slate-700 mb-2">本日の講義の感想・日常で感じる「自分の思い込みやクセ」（任意）</label>
+                    <textarea id="student_feedback" rows="4" placeholder="今回の復習内容（錯視、優越の錯覚、情動の原因帰属、期待の力など）について、学んだことや日常の体験を自由に入力してください。"
+                              class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none text-slate-800 text-sm sm:text-base"></textarea>
+                </div>
+
+                <!-- 送信ボタン -->
+                <div class="pt-2">
+                    <button type="submit" id="submit_btn" 
+                            class="w-full sm:w-auto bg-teal-700 hover:bg-teal-800 text-white font-bold px-8 py-3 rounded-xl transition-all shadow-md hover:shadow-lg active:scale-98 cursor-pointer text-sm sm:text-base">
+                        すべての内容を理解し、芝崎先生へ送信する
+                    </button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- フッター -->
+    <footer class="bg-slate-900 text-slate-400 text-center py-8 text-xs border-t border-slate-800 mt-20">
+        <p>&copy; 2026 四国大学 心理学入門（後期） 講義ポータル All Rights Reserved.</p>
+    </footer>
+
+    <!-- Formspree 送信ロジック -->
+    <script>
+        function submitForm(event) {
+            event.preventDefault();
+
+            const studentId = document.getElementById("student_id").value.trim();
+            const studentName = document.getElementById("student_name").value.trim();
+            const feedback = document.getElementById("student_feedback").value.trim() || "特になし";
+            const btn = document.getElementById("submit_btn");
+
+            // クイズ自動採点（問1: B, 問2: A）
+            let scoreCount = 0;
+            const q1Answer = document.querySelector('input[name="q1"]:checked').value;
+            const q2Answer = document.querySelector('input[name="q2"]:checked').value;
+
+            if (q1Answer === "B") scoreCount++;
+            if (q2Answer === "A") scoreCount++;
+
+            const scoreRate = Math.floor((scoreCount / 2) * 100) + "%";
+            const subjectLabel = document.getElementById("subject_label").innerText;
+            const lectureTitle = document.title;
+
+            const payloadData = {
+                "科目区分": subjectLabel,
+                "講義回": lectureTitle,
+                "学籍番号": studentId,
+                "氏名": studentName,
+                "クイズ得点率": scoreRate,
+                "問1解答": q1Answer,
+                "問2解答": q2Answer,
+                "学生からの質問・感想": feedback
+            };
+
+            const FORMSPREE_ID = "xjgqbqnl"; 
+
+            btn.disabled = true;
+            btn.innerText = "送信中...";
+
+            fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+                method: "POST",
+                headers: {
+                    "Accept": "application/json",
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(payloadData)
+            })
+            .then(response => {
+                if (response.ok) {
+                    alert(`正常に記録されました（学籍番号: ${studentId}、得点率: ${scoreRate}）。第1回受講完了として受領しました。`);
+                    btn.innerText = "送信完了";
+                } else {
+                    throw new Error("APIエラー");
+                }
+            })
+            .catch(error => {
+                console.error("Submission Error:", error);
+                alert("送信に失敗しました。時間をおいて再度送信ボタンを押してください。");
+                btn.disabled = false;
+                btn.innerText = "すべての内容を理解し、芝崎先生へ送信する";
+            });
+        }
+    </script>
+</body>
+</html>
